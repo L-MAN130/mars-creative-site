@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mars Creative</title>
+<meta name="description" content="Mars Creative makes ad concepts for local service businesses.">
+<link rel="canonical" href="https://marscreative.us">
+<meta property="og:title" content="Mars Creative">
+<meta property="og:description" content="Mars Creative makes ad concepts for local service businesses.">
+<meta property="og:url" content="https://marscreative.us">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #faf7f2; --card: #ffffff; --ink: #1d1a17; --muted: #6b645c; --line: #e6dfd4;
+  --accent: #b5451b; --accent-ink: #ffffff;
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #15120f; --card: #201c18; --ink: #f4efe8; --muted: #a39a8f; --line: #362f28; --accent: #e0733f; --accent-ink: #15120f; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+header.top { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
+.brand { font: 700 22px var(--serif); letter-spacing: -.01em; text-decoration: none; }
+.btn { display: inline-block; padding: 12px 20px; border-radius: 999px; font: 600 15px var(--sans); text-decoration: none;
+       border: 1.5px solid var(--ink); color: var(--ink); background: transparent; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn:hover { filter: brightness(1.08); }
+.buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.intro { padding: 40px 0 28px; max-width: 760px; }
+.intro h1 { font: 700 clamp(34px, 6vw, 58px)/1.05 var(--serif); letter-spacing: -.02em; margin: 0 0 16px; }
+.intro p { font-size: 18px; color: var(--muted); margin: 0 0 24px; }
+
+/* Hero: the best three, laid out like a phone feed. */
+.feed { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; padding-bottom: 24px; }
+.post { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.post-head { display: flex; flex-direction: column; padding: 12px 14px; }
+.post-head strong { font-size: 14px; }
+.post-head span { font-size: 12px; color: var(--muted); }
+.post-cap { padding: 12px 14px 16px; font-size: 14px; }
+
+.media { display: block; width: 100%; background: var(--line); object-fit: cover; }
+.r4x5 { aspect-ratio: 4 / 5; } .r9x16 { aspect-ratio: 9 / 16; } .r1x1 { aspect-ratio: 1 / 1; }
+
+.tag { display: inline-block; font: 600 11px var(--sans); letter-spacing: .08em; text-transform: uppercase;
+       color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 3px 10px; }
+
+h2.cat { font: 700 28px var(--serif); margin: 56px 0 4px; letter-spacing: -.01em; }
+section.business { border-top: 1px solid var(--line); margin-top: 20px; padding: 24px 0 8px; }
+.business-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+.business-head h3 { font: 700 22px var(--serif); margin: 0; }
+.business-head .where { color: var(--muted); font-size: 14px; }
+.angle { color: var(--muted); max-width: 640px; margin: 8px 0 18px; }
+.angle b { color: var(--ink); font-weight: 600; }
+.tiles { columns: 3 240px; column-gap: 20px; }
+.tile { break-inside: avoid; margin: 0 0 20px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.tile figcaption { padding: 10px 14px 14px; font-size: 14px; }
+
+#about { margin-top: 64px; padding: 40px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr; gap: 28px; }
+#about.with-photo { grid-template-columns: 220px 1fr; align-items: start; }
+#about img { width: 220px; height: 220px; object-fit: cover; border-radius: 50%; }
+#about h2 { font: 700 30px var(--serif); margin: 0 0 12px; }
+#about p { max-width: 640px; margin: 0 0 12px; color: var(--muted); font-size: 17px; }
+#about p strong { color: var(--ink); }
+
+#contact { padding: 40px 0 56px; border-top: 1px solid var(--line); }
+#contact h2 { font: 700 30px var(--serif); margin: 0 0 8px; }
+#contact p { color: var(--muted); margin: 0 0 20px; }
+
+footer { border-top: 1px solid var(--line); padding: 24px 0 48px; color: var(--muted); font-size: 14px; }
+footer p { margin: 6px 0; max-width: 760px; }
+
+@media (max-width: 820px) {
+  .feed { grid-template-columns: 1fr; max-width: 420px; }
+  #about.with-photo { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top">Mars Creative</a>
+    <a class="btn" href="mailto:logan@marscreative.us">Email me</a>
+  </header>
+
+  <main id="top">
+    <div class="intro">
+      <h1>Ads that look like they really happened.</h1>
+      <p>Mars Creative makes ad concepts for local service businesses. A few of the latest are below.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://cal.com/logan-spacek-jfxzhf/15min">Book a 15-minute call</a>
+        <a class="btn" href="mailto:logan@marscreative.us">logan@marscreative.us</a>
+      </div>
+    </div>
+
+    <div class="feed" aria-label="Latest work">
+      <article class="post">
+        <div class="post-head"><strong>H. Hulse Heating and Air Conditioning</strong><span>Fairfield County, CT</span></div>
+        <img class="media r1x1" src="media/h-hulse-inc-h-hulse-heating-and-air-conditioning_my-heating-bill-keeps-going_v2_1x1.png" alt="My Heating Bill Keeps Going Up" loading="lazy">
+        <div class="post-cap">My Heating Bill Keeps Going Up <span class="tag">Concept work</span></div>
+      </article>
+      <article class="post">
+        <div class="post-head"><strong>H. Hulse Heating and Air Conditioning</strong><span>Fairfield County, CT</span></div>
+        <video class="media r9x16" src="media/h-hulse-inc-h-hulse-heating-and-air-conditioning_haven-t-turned-the-furnace-on_v2_9x16.mp4" poster="media/h-hulse-inc-h-hulse-heating-and-air-conditioning_haven-t-turned-the-furnace-on_v2_9x16.jpg" aria-label="Haven&#x27;t Turned The Furnace On Since April" autoplay muted loop playsinline preload="metadata"></video>
+        <div class="post-cap">Haven&#x27;t Turned The Furnace On Since April <span class="tag">Concept work</span></div>
+      </article>
+      <article class="post">
+        <div class="post-head"><strong>H. Hulse Heating and Air Conditioning</strong><span>Fairfield County, CT</span></div>
+        <img class="media r4x5" src="media/h-hulse-inc-h-hulse-heating-and-air-conditioning_that-rattling-noise-isn-t-normal_v2_4x5.png" alt="That Rattling Noise Isn&#x27;t Normal, Stratford" loading="lazy">
+        <div class="post-cap">That Rattling Noise Isn&#x27;t Normal, Stratford <span class="tag">Concept work</span></div>
+      </article>
+    </div>
+
+    <h2 class="cat">Heating and cooling</h2>
+    <section class="business" id="h-hulse-inc-h-hulse-heating-and-air-conditioning" data-business="h-hulse-inc-h-hulse-heating-and-air-conditioning" data-status="concept">
+      <div class="business-head">
+        <h3>H. Hulse Heating and Air Conditioning</h3>
+        <span class="where">Fairfield County, CT</span>
+        <span class="tag">Concept work</span>
+      </div>
+      <p class="angle"><b>The angle:</b> Frustration over rising costs from an inefficient system.</p>
+      <div class="tiles">
+        <figure class="tile">
+          <img class="media r1x1" src="media/h-hulse-inc-h-hulse-heating-and-air-conditioning_my-heating-bill-keeps-going_v2_1x1.png" alt="My Heating Bill Keeps Going Up" loading="lazy">
+          <figcaption>My Heating Bill Keeps Going Up</figcaption>
+        </figure>
+        <figure class="tile">
+          <video class="media r9x16" src="media/h-hulse-inc-h-hulse-heating-and-air-conditioning_haven-t-turned-the-furnace-on_v2_9x16.mp4" poster="media/h-hulse-inc-h-hulse-heating-and-air-conditioning_haven-t-turned-the-furnace-on_v2_9x16.jpg" aria-label="Haven&#x27;t Turned The Furnace On Since April" autoplay muted loop playsinline preload="metadata"></video>
+          <figcaption>Haven&#x27;t Turned The Furnace On Since April</figcaption>
+        </figure>
+        <figure class="tile">
+          <img class="media r4x5" src="media/h-hulse-inc-h-hulse-heating-and-air-conditioning_that-rattling-noise-isn-t-normal_v2_4x5.png" alt="That Rattling Noise Isn&#x27;t Normal, Stratford" loading="lazy">
+          <figcaption>That Rattling Noise Isn&#x27;t Normal, Stratford</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="business" id="fairfield-county-heating-and-cooling-llc" data-business="fairfield-county-heating-and-cooling-llc" data-status="concept">
+      <div class="business-head">
+        <h3>Fairfield County Heating and Cooling</h3>
+        <span class="where">Fairfield County, CT</span>
+        <span class="tag">Concept work</span>
+      </div>
+      <p class="angle"><b>The angle:</b> Seasonal fear of untested system before first cold snap.</p>
+      <div class="tiles">
+        <figure class="tile">
+          <img class="media r1x1" src="media/fairfield-county-heating-and-cooling-llc_i-haven-t-tested-my-furnace_v2_1x1.png" alt="I Haven&#x27;t Tested My Furnace Since Spring." loading="lazy">
+          <figcaption>I Haven&#x27;t Tested My Furnace Since Spring.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="business" id="hellas-air-temp-inc" data-business="hellas-air-temp-inc" data-status="concept">
+      <div class="business-head">
+        <h3>Hellas Air Temp</h3>
+        <span class="where">Fairfield County, CT</span>
+        <span class="tag">Concept work</span>
+      </div>
+      <p class="angle"><b>The angle:</b> Seasonal dread: the AC just came off and the heat hasn&#x27;t been checked.</p>
+      <div class="tiles">
+        <figure class="tile">
+          <video class="media r9x16" src="media/hellas-air-temp-inc_that-first-chilly-night-hits_v2_9x16.mp4" poster="media/hellas-air-temp-inc_that-first-chilly-night-hits_v2_9x16.jpg" aria-label="That First Chilly Night Hits Different" autoplay muted loop playsinline preload="metadata"></video>
+          <figcaption>That First Chilly Night Hits Different</figcaption>
+        </figure>
+        <figure class="tile">
+          <img class="media r1x1" src="media/hellas-air-temp-inc_walk-in-cooler-down-inventory-melting_v2_1x1.png" alt="Walk-In Cooler Down, Inventory Melting" loading="lazy">
+          <figcaption>Walk-In Cooler Down, Inventory Melting</figcaption>
+        </figure>
+        <figure class="tile">
+          <img class="media r4x5" src="media/hellas-air-temp-inc_furnace-won-t-start-norwalk_v2_4x5.png" alt="Furnace Won&#x27;t Start, Norwalk?" loading="lazy">
+          <figcaption>Furnace Won&#x27;t Start, Norwalk?</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div id="about" class="">
+
+      <div>
+        <h2>About</h2>
+        <p><strong>Mars Creative</strong> is a small creative studio run by <strong>Logan Spacek</strong>. It makes photo and short video ads for local service businesses, written to sound like a neighbour and shot to look like a real moment.</p>
+        <p>The work on this page is concept work: ideas made on spec to show what an ad could be. If one of them looks like something your business would run, let's talk.</p>
+      </div>
+    </div>
+
+    <div id="contact">
+      <h2>Want something like this for your business?</h2>
+      <p>Send an email or grab a time that suits you.</p>
+      <div class="buttons">
+        <a class="btn primary" href="mailto:logan@marscreative.us">Email logan@marscreative.us</a>
+        <a class="btn" href="https://cal.com/logan-spacek-jfxzhf/15min">Book a 15-minute call</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+<p><span class="tag">Concept work</span> &middot; The businesses shown here (H. Hulse Heating and Air Conditioning, Fairfield County Heating and Cooling, Hellas Air Temp) did not commission this work, have not approved it, and are not affiliated with Mars Creative.</p>
+<p>Mars Creative &middot; Logan Spacek</p>
+  </footer>
+</div>
+
+</body>
+</html>
