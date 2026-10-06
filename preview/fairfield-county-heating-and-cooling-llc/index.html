@@ -1,124 +1,590 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="robots" content="noindex">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Fairfield County Heating and Cooling site concept</title>
-<meta name="description" content="A concept for the Fairfield County Heating and Cooling website by Mars Creative. Not the official site.">
+<meta name="theme-color" content="#1E2D29">
+<title>Fairfield County Heating and Cooling — Fairfield, CT · (203) 997-9699</title>
+<meta name="description" content="Family owned heating and cooling service in Fairfield, CT. Repair and installation for heating, air conditioning, heat pumps, boilers, furnaces and ductless mini-splits. 365 days a year. Call (203) 997-9699.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#14202b;--muted:#51606d;--bg:#f6f4ef;--card:#fff;--line:#e2ded4;--accent:#0b5c8a;--accent-d:#084a70;--warm:#b4541c}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);padding-bottom:64px}
-a{color:inherit}img{max-width:100%;display:block}
-.banner{background:#14202b;color:#fff;font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.01em}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-header.top{background:var(--card);border-bottom:1px solid var(--line)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
-.brand{font-weight:700;font-size:18px;letter-spacing:-.01em}
-.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:13px 22px;border-radius:10px;border:0;font-size:16px;cursor:pointer}
-.btn:hover{background:var(--accent-d)}.btn.alt{background:transparent;color:var(--accent);box-shadow:inset 0 0 0 2px var(--accent)}
-.btn.alt:hover{background:rgba(11,92,138,.08)}
-.hero{padding:28px 0 36px}
-.hero .wrap{display:grid;gap:24px}
-.eyebrow{color:var(--warm);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px}
-h1{font-size:clamp(34px,8vw,56px);line-height:1.05;margin:0 0 12px;letter-spacing:-.02em}
-.lead{font-size:18px;color:var(--muted);margin:0 0 18px}
-.badges{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px;padding:0;list-style:none}
-.badges li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:14px;font-weight:600}
-.cta{display:flex;flex-wrap:wrap;gap:10px}
-.hero img{border-radius:16px;width:100%;aspect-ratio:4/5;object-fit:cover}
-section{padding:36px 0}section.alt{background:var(--card);border-block:1px solid var(--line)}
-h2{font-size:28px;line-height:1.15;margin:0 0 18px;letter-spacing:-.01em}
-.cards{display:grid;gap:14px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
-section.alt .card{background:var(--bg)}
-.card h3{margin:0 0 6px;font-size:19px}.card p{margin:0;color:var(--muted)}
-.two{display:grid;gap:24px}
-.photo{border-radius:16px;width:100%;aspect-ratio:1/1;object-fit:cover}
-.why{display:grid;gap:8px;margin:16px 0 0;padding:0;list-style:none}
-.why li{padding-left:28px;position:relative;font-weight:600}
-.why li::before{content:"";position:absolute;left:0;top:.35em;width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:inset 0 0 0 4px #fff,0 0 0 2px var(--accent)}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;padding:0;list-style:none}
-.chips li{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;font-weight:600}
-.muted{color:var(--muted)}
-dl.hours{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 18px}dl.hours dt{font-weight:600}dl.hours dd{margin:0}
-.phone{font-size:30px;font-weight:800;letter-spacing:-.01em;text-decoration:none;color:var(--accent)}
-form{display:grid;gap:10px;margin-top:14px}
-fieldset{border:0;padding:0;margin:0;display:grid;gap:10px}
-label{font-size:14px;font-weight:600;display:grid;gap:4px}
-input,select{font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
-.demo{font-size:13px;color:var(--muted);margin:0}
-footer{padding:28px 0 40px;font-size:14px;color:var(--muted)}footer p{margin:0 0 8px}
-.callbar{position:fixed;left:0;right:0;bottom:0;background:var(--accent);color:#fff;text-align:center;padding:14px;font-weight:700;text-decoration:none;font-size:17px}
-@media(min-width:760px){
- body{padding-bottom:0}.callbar{display:none}
- .hero{padding:48px 0 56px}.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center;gap:40px}
- .cards{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr 1fr;align-items:center;gap:40px}
- section{padding:56px 0}}
+  :root {
+    --paper: #F7F2EA;
+    --paper-2: #EFE7DA;
+    --forest: #1E2D29;
+    --forest-2: #2A3D37;
+    --ink: #1A201E;
+    --muted: #5C645F;
+    --line: #DDD3C4;
+    --copper: #B85C2E;
+    --copper-dark: #9A4A22;
+    --display: "Fraunces", Georgia, "Times New Roman", serif;
+    --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --radius: 14px;
+    --wrap: 1140px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    padding-bottom: 76px;
+  }
+  @media (min-width: 860px) { body { padding-bottom: 0; } }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  h1, h2, h3 {
+    font-family: var(--display);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  p { margin: 0; text-wrap: pretty; }
+  .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
+  @media (min-width: 860px) { .wrap { padding: 0 32px; } }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+  .skip {
+    position: absolute; left: 12px; top: -60px; z-index: 100;
+    background: var(--copper); color: #fff; padding: 10px 14px; border-radius: 8px;
+    text-decoration: none; font-weight: 600;
+  }
+  .skip:focus { top: 12px; }
+  :focus-visible { outline: 3px solid var(--copper); outline-offset: 3px; border-radius: 4px; }
 
-.ph{background:#e9e5da;border:2px dashed #b9b3a3;border-radius:12px;min-height:220px;display:flex;align-items:center;justify-content:center;
-color:#6b6558;font-size:15px;text-align:center;padding:16px}
-.hero-img,.photo{border-radius:12px;width:100%}
-.lead{font-size:19px;line-height:1.45;margin:6px 0 10px}
-.proof{margin:0 0 18px;font-weight:700}.proof a{color:inherit;text-decoration:underline;text-underline-offset:3px}
-.creds{list-style:none;padding:0;margin:8px 0;font-size:13px;line-height:1.6;opacity:.85}
+  .eyebrow {
+    font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--copper-dark); margin-bottom: 14px;
+  }
+  .section { padding: 72px 0; }
+  @media (min-width: 860px) { .section { padding: 112px 0; } }
+  .section-head { max-width: 640px; margin-bottom: 40px; }
+  .section-head h2 { font-size: clamp(32px, 5vw, 48px); }
+  .section-head p { margin-top: 16px; color: var(--muted); font-size: 18px; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    min-height: 52px; padding: 0 24px; border-radius: 999px;
+    font-family: var(--body); font-weight: 600; font-size: 17px; text-decoration: none;
+    border: 0; cursor: pointer; transition: background-color .2s ease, transform .2s ease;
+  }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+  .btn-primary { background: var(--copper); color: #fff; }
+  .btn-primary:hover { background: var(--copper-dark); }
+  .btn-primary:active { transform: translateY(1px); }
+  .btn-light { background: var(--paper); color: var(--forest); }
+  .btn-light:hover { background: #fff; }
+
+  /* Header */
+  .site-header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(247, 242, 234, 0.94);
+    backdrop-filter: saturate(140%) blur(10px);
+    -webkit-backdrop-filter: saturate(140%) blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .header-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; min-width: 0; }
+  .brand-mark {
+    width: 36px; height: 36px; border-radius: 10px; background: var(--forest); color: var(--paper);
+    display: grid; place-items: center; flex: none;
+  }
+  .brand-mark svg { width: 20px; height: 20px; }
+  .brand-name { font-family: var(--display); font-weight: 600; font-size: 17px; line-height: 1.1; }
+  .brand-name span { display: block; font-family: var(--body); font-size: 12px; font-weight: 500; color: var(--muted); letter-spacing: 0.02em; }
+  .header-phone {
+    display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+    font-weight: 700; color: var(--forest); white-space: nowrap; font-size: 15px;
+  }
+  .header-phone svg { width: 18px; height: 18px; color: var(--copper); }
+  .nav { display: none; }
+  @media (min-width: 860px) {
+    .header-row { min-height: 76px; }
+    .brand-name { font-size: 19px; }
+    .nav { display: flex; gap: 28px; }
+    .nav a { text-decoration: none; font-weight: 500; font-size: 15px; color: var(--muted); }
+    .nav a:hover { color: var(--ink); }
+    .header-phone {
+      background: var(--forest); color: var(--paper); padding: 10px 18px; border-radius: 999px; font-size: 16px;
+    }
+    .header-phone svg { color: #E4A47F; }
+  }
+  @media (max-width: 380px) {
+    .brand-name span { display: none; }
+    .header-phone { font-size: 14px; }
+  }
+
+  /* Hero */
+  .hero { padding: 40px 0 64px; }
+  .hero-grid { display: grid; gap: 36px; }
+  .hero h1 { font-size: clamp(40px, 9vw, 76px); }
+  .hero-lede { margin-top: 20px; font-size: 19px; color: var(--muted); max-width: 520px; }
+  .hero-actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .review-badge {
+    display: inline-flex; align-items: center; gap: 12px; text-decoration: none;
+    padding: 10px 16px 10px 12px; border-radius: 999px; background: #fff; border: 1px solid var(--line);
+    transition: border-color .2s ease;
+  }
+  .review-badge:hover { border-color: var(--forest); }
+  .g-logo { width: 26px; height: 26px; flex: none; }
+  .review-text { display: flex; flex-direction: column; line-height: 1.2; }
+  .review-text strong { font-size: 15px; display: flex; align-items: center; gap: 6px; }
+  .review-text small { font-size: 12.5px; color: var(--muted); }
+  .stars { display: inline-flex; gap: 1px; color: #E0A526; }
+  .stars svg { width: 14px; height: 14px; }
+  .hero-meta { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px 22px; color: var(--muted); font-size: 15px; }
+  .hero-meta span { display: inline-flex; align-items: center; gap: 8px; }
+  .hero-meta span::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--copper); }
+
+  .photo-slot {
+    position: relative; border-radius: var(--radius); overflow: hidden;
+    background:
+      repeating-linear-gradient(135deg, rgba(30,45,41,0.06) 0 12px, transparent 12px 24px),
+      var(--paper-2);
+    border: 1.5px dashed #BFB29E;
+    display: grid; place-items: center; text-align: center; color: var(--muted);
+    min-height: 280px; padding: 24px;
+  }
+  .photo-slot svg { width: 34px; height: 34px; margin: 0 auto 10px; color: #A2947E; }
+  .photo-slot strong { display: block; font-family: var(--display); font-size: 22px; color: var(--forest); font-weight: 600; }
+  .photo-slot small { display: block; margin-top: 4px; font-size: 14px; }
+  .hero-photo { aspect-ratio: 4 / 5; min-height: 0; }
+  @media (min-width: 860px) {
+    .hero { padding: 72px 0 112px; }
+    .hero-grid { grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center; }
+  }
+
+  /* Services */
+  .services { background: #FBF8F3; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .service-grid { display: grid; gap: 16px; list-style: none; margin: 0; padding: 0; }
+  .service {
+    background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 26px 24px; display: flex; flex-direction: column; gap: 14px;
+  }
+  .service-icon {
+    width: 46px; height: 46px; border-radius: 12px; background: var(--forest); color: #E4A47F;
+    display: grid; place-items: center;
+  }
+  .service-icon svg { width: 24px; height: 24px; }
+  .service h3 { font-size: 23px; }
+  .service p { color: var(--muted); font-size: 16px; }
+  @media (min-width: 640px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 960px) { .service-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; } .service { padding: 32px 28px; } }
+
+  /* How it works */
+  .steps { display: grid; gap: 16px; list-style: none; margin: 0; padding: 0; counter-reset: step; }
+  .step {
+    position: relative; padding: 28px 24px 28px; border-radius: var(--radius);
+    background: var(--forest); color: var(--paper);
+  }
+  .step-num {
+    font-family: var(--display); font-size: 56px; line-height: 1; color: #E4A47F; font-weight: 500;
+    display: block; margin-bottom: 18px;
+  }
+  .step h3 { font-size: 24px; }
+  .step p { margin-top: 10px; color: rgba(247, 242, 234, 0.78); font-size: 16px; }
+  @media (min-width: 860px) { .steps { grid-template-columns: repeat(2, 1fr); gap: 20px; } .step { padding: 36px 30px; } }
+
+  /* About */
+  .about { background: var(--paper-2); }
+  .about-grid { display: grid; gap: 36px; }
+  .about-lines { list-style: none; margin: 0; padding: 0; border-top: 1px solid #CFC3B0; }
+  .about-lines li {
+    font-family: var(--display); font-size: clamp(24px, 4vw, 34px); line-height: 1.2; font-weight: 500;
+    padding: 22px 0; border-bottom: 1px solid #CFC3B0; color: var(--forest);
+  }
+  .people { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .person { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; }
+  .person small { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); font-weight: 600; }
+  .person strong { font-size: 17px; }
+  .about-photo { aspect-ratio: 4 / 3; min-height: 0; }
+  @media (min-width: 860px) { .about-grid { grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; } }
+
+  /* Service area */
+  .area-grid { display: grid; gap: 32px; }
+  .towns { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .towns li {
+    display: flex; align-items: center; gap: 10px;
+    background: #fff; border: 1px solid var(--line); border-radius: 12px;
+    padding: 16px 18px; font-weight: 600; font-size: 17px;
+  }
+  .towns svg { width: 18px; height: 18px; color: var(--copper); flex: none; }
+  .towns li.home { background: var(--forest); color: var(--paper); border-color: var(--forest); }
+  .towns li.home svg { color: #E4A47F; }
+  .towns li.home small { font-weight: 500; font-size: 12px; opacity: .75; margin-left: auto; white-space: nowrap; }
+  @media (min-width: 860px) {
+    .area-grid { grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: start; }
+    .towns { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .area-grid .section-head { margin-bottom: 0; }
+  }
+
+  /* Emergency band */
+  .emergency { background: var(--copper); color: #fff; padding: 56px 0; }
+  .emergency-row { display: flex; flex-direction: column; gap: 22px; }
+  .emergency h2 { font-size: clamp(30px, 5vw, 46px); }
+  .emergency p { margin-top: 10px; font-size: 18px; color: rgba(255,255,255,0.88); }
+  .emergency-phone {
+    font-family: var(--display); font-weight: 600; font-size: clamp(34px, 7vw, 56px); letter-spacing: -0.01em;
+    text-decoration: none; color: #fff; line-height: 1; display: inline-flex; align-items: center; gap: 14px;
+    border-bottom: 2px solid rgba(255,255,255,0.5); padding-bottom: 8px; width: fit-content;
+    white-space: nowrap; flex: none;
+  }
+  .emergency-phone:hover { border-bottom-color: #fff; }
+  .emergency-phone svg { width: 0.7em; height: 0.7em; }
+  @media (min-width: 860px) {
+    .emergency { padding: 72px 0; }
+    .emergency-row { flex-direction: row; align-items: center; justify-content: space-between; gap: 40px; }
+  }
+
+  /* Form */
+  .request-grid { display: grid; gap: 36px; }
+  .call-card {
+    margin-top: 28px; background: var(--forest); color: var(--paper); border-radius: var(--radius); padding: 24px;
+  }
+  .call-card p { color: rgba(247,242,234,0.78); font-size: 15px; }
+  .call-card a { display: block; margin-top: 6px; font-family: var(--display); font-size: 30px; font-weight: 600; text-decoration: none; }
+  .call-card a:hover { color: #E4A47F; }
+  form.request {
+    background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px;
+    display: grid; gap: 18px;
+  }
+  .field { display: grid; gap: 8px; }
+  .field label { font-weight: 600; font-size: 15px; }
+  .field input, .field textarea {
+    width: 100%; font: inherit; font-size: 17px; color: var(--ink);
+    background: var(--paper); border: 1px solid #CDBFAA; border-radius: 10px; padding: 14px 14px;
+    transition: border-color .2s ease, background-color .2s ease;
+  }
+  .field textarea { min-height: 130px; resize: vertical; }
+  .field input:focus, .field textarea:focus { outline: none; border-color: var(--forest); background: #fff; box-shadow: 0 0 0 3px rgba(30,45,41,0.15); }
+  .form-note {
+    font-size: 14px; color: var(--muted); background: var(--paper); border-radius: 10px; padding: 12px 14px;
+    border-left: 3px solid var(--copper);
+  }
+  .form-note a { font-weight: 700; color: var(--forest); }
+  .form-status { font-size: 15px; font-weight: 600; color: var(--forest); }
+  .form-status:empty { display: none; }
+  form.request .btn { width: 100%; }
+  @media (min-width: 860px) {
+    .request-grid { grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: start; }
+    form.request { padding: 36px; }
+  }
+
+  /* Footer */
+  .site-footer { background: var(--forest); color: rgba(247,242,234,0.78); padding: 56px 0 32px; font-size: 15px; }
+  .footer-grid { display: grid; gap: 32px; }
+  .site-footer h2 { font-size: 26px; color: var(--paper); }
+  .site-footer h3 { font-family: var(--body); font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #E4A47F; margin-bottom: 10px; }
+  .site-footer a { color: var(--paper); text-decoration: none; }
+  .site-footer a:hover { text-decoration: underline; }
+  .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .footer-phone { font-family: var(--display); font-size: 24px; font-weight: 600; display: inline-block; margin-top: 10px; }
+  .license { font-variant-numeric: tabular-nums; }
+  .license span { display: block; font-size: 13px; color: rgba(247,242,234,0.6); }
+  .concept {
+    margin-top: 44px; padding-top: 24px; border-top: 1px solid rgba(247,242,234,0.16);
+    font-size: 13.5px; color: rgba(247,242,234,0.62); display: grid; gap: 6px;
+  }
+  @media (min-width: 860px) { .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; gap: 48px; } }
+
+  /* Sticky mobile call bar */
+  .call-bar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(30, 45, 41, 0.97); border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .call-bar .btn { width: 100%; min-height: 54px; font-size: 18px; }
+  @media (min-width: 860px) { .call-bar { display: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
 </style>
 </head>
 <body>
-<div class="banner">Concept by Mars Creative — not the official Fairfield County Heating and Cooling site</div>
-<header class="top"><div class="wrap">
-<span class="brand">Fairfield County Heating and Cooling</span>
-<a class="btn" href="tel:2039979699">(203) 997-9699</a>
-</div></header>
-<main>
-<section class="hero"><div class="wrap">
-<div>
-<h1>Heating and cooling in Fairfield County</h1>
-<p class="lead">Proudly serving Fairfield, CT and the surrounding area since 2013</p>
-<p class="proof"><a href="https://www.google.com/maps/place/?q=place_id:ChIJr2ue_pIP6IkRZ659_5wkBJg">4 reviews · 5.0★ on Google</a></p>
-<div class="cta"><a class="btn" href="#contact">Request service</a><a class="btn alt" href="tel:2039979699">Call (203) 997-9699</a></div>
-</div>
-<img class="hero-img" src="install.png" alt="A neatly finished furnace installation">
-</div></section>
-<section class="alt" id="services"><div class="wrap"><h2>Services</h2><div class="cards"><div class="card"><h3>Air Conditioning</h3><p>If you are considering a replacement of your air conditioning system for your home or business in Greenwich, Fairfield County Heating and Cooling, LLC offers a variety of options along with expert recommendations that increase comfort and savings.</p></div>
-<div class="card"><h3>Furnaces</h3><p>Investing in a new furnace not only saves money on your monthly energy bills, but also improves overall comfort by consistently maintaining an even temperature throughout your home or business in Greenwich.</p></div>
-<div class="card"><h3>Boilers</h3><p>When the professionals at Fairfield County Heating and Cooling, LLC install a new boiler, you can count on energy efficiency, quiet performance and ease of control.</p></div>
-<div class="card"><h3>Heat Pumps</h3><p>A professional Fairfield County Heating and Cooling, LLC heat pump installation provides year-round climate control.</p></div>
-<div class="card"><h3>Air Duct Cleaning</h3><p>Regular cleaning and maintenance of your HVAC unit and its components will result in it having a longer lifespan. Your machine will breakdown less often and you will experience less air duct leaks and problems than if you never clean your system.</p></div>
-<div class="card"><h3>Commercial HVAC</h3><p>A good quality, reliable HVAC system begins with a quality installation. At Fairfield County Heating and Cooling, LLC, we never cut corners to ensure that your HVAC system is perfect for your commercial space and its heating &amp; cooling requirements.</p></div>
-<div class="card"><h3>HVAC Contractor</h3><p>With unmatched expertise and the industry’s most excellent equipment, Fairfield County Heating and Cooling, LLC offers a full-suite of quality-assured HVAC services for competitive rates. From our in-depth consultations to the final stages of the installation, we guarantee a wonderful customer experience.</p></div>
-<div class="card"><h3>Water Heaters</h3><p>If you are looking to have the water heater in your property repaired or replaced, we can help. We will provide you with an in-depth assessment of what the problem is and exactly how we can fix it.</p></div></div></div></section>
-<section id="about"><div class="wrap two">
-<div><h2>About</h2><p>At Fairfield County Heating and Cooling, LLC, we specialize in providing full spectrum heating, ventilation, air conditioning and installations.</p>
-<p>We consider ourselves experts in the field of HVAC  services, and have proven to be a trusted source after many years of providing high-quality work to our customers.</p>
-<p>We pride ourselves on upholding an uncompromised standard of professionalism, friendliness and timely style of conducting business that we believe has earned us the reputation that we continue to cultivate today.</p></div>
-<img class="photo" src="tools.png" alt="HVAC tools laid out on a drop cloth">
-</div></section>
-<section class="alt" id="area"><div class="wrap two"><div><h2>Service area</h2><ul class="chips"><li>Fairfield</li><li>Greenwich</li><li>Westport</li></ul></div><img class="photo" src="van.png" alt="A plain work van in a driveway"></div></section>
-<section id="contact"><div class="wrap two">
-<div>
-<h2>Request service</h2>
-<p><a class="phone" href="tel:2039979699">(203) 997-9699</a></p>
+<a class="skip" href="#main">Skip to content</a>
 
-</div>
-<div>
-<form onsubmit="return false"><fieldset disabled>
-<label>Name<input type="text" autocomplete="off"></label>
-<label>Phone<input type="tel" autocomplete="off"></label>
-<button class="btn" type="button">Request service</button>
-</fieldset>
-<p class="demo">Concept only: this form does not send anything. To reach Fairfield County Heating and Cooling, call (203) 997-9699.</p>
-</form>
-</div>
-</div></section>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M14.5 4h-5L7.5 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3.5z"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top" aria-label="Fairfield County Heating and Cooling, back to top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M12 17c-1.7 0-2.5-1.2-2.5-2.4 0-1.6 1.6-2.3 1.6-4.1 1.9 1 3.4 2.5 3.4 4.3 0 1.2-.8 2.2-2.5 2.2z"/></svg>
+      </span>
+      <span class="brand-name">Fairfield County<span>Heating and Cooling</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#area">Service area</a>
+      <a href="#request">Request service</a>
+    </nav>
+    <a class="header-phone" href="tel:+12039979699">
+      <svg aria-hidden="true"><use href="#i-phone"/></svg>
+      (203) 997-9699
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Fairfield, CT · Open 365 days a year</p>
+        <h1 id="hero-title">Heating and cooling for Fairfield County homes.</h1>
+        <p class="hero-lede">Family owned and operated. Call, and a technician comes out.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+12039979699">
+            <svg aria-hidden="true"><use href="#i-phone"/></svg>
+            Call (203) 997-9699
+          </a>
+          <a class="review-badge" href="https://www.google.com/maps/search/?api=1&amp;query=Fairfield+County+Heating+and+Cooling+Fairfield+CT" target="_blank" rel="noopener">
+            <svg class="g-logo" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>
+            <span class="review-text">
+              <strong>5.0
+                <span class="stars" aria-hidden="true">
+                  <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+                </span>
+              </strong>
+              <small>Google reviews</small>
+            </span>
+            <span class="sr-only">Rated 5.0 out of 5 on Google. Opens Google Maps in a new tab.</span>
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span>Family owned</span>
+        </div>
+      </div>
+      <div class="photo-slot hero-photo" role="img" aria-label="Photo placeholder for a technician or service van">
+        <div>
+          <svg aria-hidden="true"><use href="#i-camera"/></svg>
+          <strong>Your photo here</strong>
+          <small>Technician, van, or a finished install</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section services" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Services</p>
+        <h2 id="services-title">What we work on.</h2>
+        <p>Repair when something fails. Installation when it is time to replace.</p>
+      </div>
+      <ul class="service-grid">
+        <li class="service">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1 3-3 4.5-3 8a3 3 0 0 0 6 0c0-1.2-.5-2.2-1-3 2 .7 4 3 4 6a6 6 0 0 1-12 0c0-5 5-7 6-11z"/></svg>
+          </span>
+          <h3>Heating repair and installation</h3>
+          <p>No heat, uneven heat, or a system at the end of its life.</p>
+        </li>
+        <li class="service">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M4.9 6l14.2 12M19.1 6L4.9 18"/><path d="M9.5 3.5L12 5l2.5-1.5M9.5 20.5L12 19l2.5 1.5"/></svg>
+          </span>
+          <h3>Air conditioning repair and installation</h3>
+          <p>Central air that stops cooling, or a new system for the summer.</p>
+        </li>
+        <li class="service">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h12a3 3 0 1 0-3-3"/><path d="M3 16h14a3 3 0 1 1-3 3"/><path d="M3 12h18"/></svg>
+          </span>
+          <h3>Heat pumps</h3>
+          <p>One system for heating and cooling, serviced and installed.</p>
+        </li>
+        <li class="service">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="9" rx="2"/><path d="M6 11h12"/><path d="M7 17.5c1-1 1-2 0-3M12 18.5c1-1.3 1-2.7 0-4M17 17.5c1-1 1-2 0-3"/></svg>
+          </span>
+          <h3>Ductless mini-splits</h3>
+          <p>Room-by-room heating and cooling without ductwork.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-title">Two steps.</h2>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num" aria-hidden="true">01</span>
+          <h3>Call or request service</h3>
+          <p>Call (203) 997-9699 or send a request below. Tell us what is going on.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">02</span>
+          <h3>A technician comes out</h3>
+          <p>365 days a year.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section about" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2 id="about-title" class="sr-only">About Fairfield County Heating and Cooling</h2>
+        <ul class="about-lines">
+          <li>Owned by Michael Carafotes.</li>
+          <li>Ellen runs the office.</li>
+          <li>Family owned and operated.</li>
+        </ul>
+        <div class="people">
+          <div class="person"><small>Owner</small><strong>Michael Carafotes</strong></div>
+          <div class="person"><small>Office</small><strong>Ellen</strong></div>
+        </div>
+      </div>
+      <div class="photo-slot about-photo" role="img" aria-label="Photo placeholder for the team">
+        <div>
+          <svg aria-hidden="true"><use href="#i-camera"/></svg>
+          <strong>Your photo here</strong>
+          <small>Michael and the team</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="area" aria-labelledby="area-title">
+    <div class="wrap area-grid">
+      <div class="section-head">
+        <p class="eyebrow">Service area</p>
+        <h2 id="area-title">Based in Fairfield. Working across the county.</h2>
+        <p>Not sure if you are in range? Call and ask.</p>
+      </div>
+      <ul class="towns">
+        <li class="home"><svg aria-hidden="true"><use href="#i-pin"/></svg>Fairfield <small>Home base</small></li>
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg>Greenwich</li>
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg>Westport</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="emergency" aria-labelledby="emergency-title">
+    <div class="wrap emergency-row">
+      <div>
+        <h2 id="emergency-title">No heat. No cooling. Call now.</h2>
+        <p>Fast and efficient service, 365 days a year.</p>
+      </div>
+      <a class="emergency-phone" href="tel:+12039979699">
+        <svg aria-hidden="true"><use href="#i-phone"/></svg>
+        (203) 997-9699
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="request" aria-labelledby="request-title">
+    <div class="wrap request-grid">
+      <div>
+        <div class="section-head">
+          <p class="eyebrow">Request service</p>
+          <h2 id="request-title">Tell us what is wrong.</h2>
+          <p>Name, number, and a few words about the problem. That is all we need to start.</p>
+        </div>
+        <div class="call-card">
+          <p>Faster by phone</p>
+          <a href="tel:+12039979699">(203) 997-9699</a>
+        </div>
+      </div>
+      <form class="request" id="request-form" novalidate>
+        <div class="field">
+          <label for="f-name">Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+        </div>
+        <div class="field">
+          <label for="f-issue">What&apos;s wrong</label>
+          <textarea id="f-issue" name="issue" placeholder="For example: furnace runs but no heat upstairs" required></textarea>
+        </div>
+        <p class="form-note">Concept form — requests are not sent. Call <a href="tel:+12039979699">(203) 997-9699</a>.</p>
+        <button class="btn btn-primary" type="submit">Request service</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
 </main>
-<footer><div class="wrap">
-<p>Fairfield County Heating and Cooling, Heating and cooling in Fairfield County, CT</p>
-<ul class="creds"><li>registered and insured</li><li>License ID: PLM.0286968-P1 (P-01 Plumbing)</li><li>License ID: HTG.0404606-S1 (S-01 Heating, Piping, Cooling)</li></ul>
-<p>This page is a concept by <a href="https://marscreative.us">Mars Creative</a>. It is not the official Fairfield County Heating and Cooling site and Fairfield County Heating and Cooling has not approved it. Business details come from <a href="https://www.fairfieldc.com/">www.fairfieldc.com</a> and <a href="https://fairfieldcountyheatingandcoolingllc.com/">fairfieldcountyheatingandcoolingllc.com</a>.</p>
-<p class="demo">Photos on this concept are AI-made illustrations, not photos of the business.</p>
-</div></footer>
-<a class="callbar" href="tel:2039979699">Call (203) 997-9699</a>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h2>Fairfield County Heating and Cooling</h2>
+        <p style="margin-top:10px">Fairfield, CT · Open 365 days a year</p>
+        <a class="footer-phone" href="tel:+12039979699">(203) 997-9699</a>
+      </div>
+      <div>
+        <h3>Serving</h3>
+        <ul>
+          <li>Fairfield · Greenwich · Westport</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Licenses</h3>
+        <ul>
+          <li class="license">PLM.0286968-P1<span>Plumbing</span></li>
+          <li class="license">HTG.0404606-S1<span>Heating, piping, cooling</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="concept">
+      <p>Concept by Mars Creative — not the official site. Details from fairfieldc.com and fairfieldcountyheatingandcoolingllc.com.</p>
+      <p>&copy; <span id="year">2026</span> Fairfield County Heating and Cooling</p>
+    </div>
+  </div>
+</footer>
+
+<div class="call-bar">
+  <a class="btn btn-primary" href="tel:+12039979699">
+    <svg aria-hidden="true"><use href="#i-phone"/></svg>
+    Call (203) 997-9699
+  </a>
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("request-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var status = document.getElementById("form-status");
+    var firstInvalid = Array.prototype.find.call(this.elements, function (el) {
+      return el.required && !el.value.trim();
+    });
+    if (firstInvalid) {
+      status.textContent = "Please fill in every field.";
+      firstInvalid.focus();
+      return;
+    }
+    status.textContent = "This is a concept form, so nothing was sent. Call (203) 997-9699 to reach the team.";
+  });
+</script>
 </body>
 </html>
