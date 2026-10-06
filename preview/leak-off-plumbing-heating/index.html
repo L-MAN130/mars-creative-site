@@ -1,119 +1,382 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Leak Off Plumbing &amp; Heating site concept</title>
-<meta name="description" content="A concept for the Leak Off Plumbing &amp; Heating website by Mars Creative. Not the official site.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c1b20">
+<title>Leak Off Plumbing &amp; Heating — 24/7 Plumber in Bridgeport, CT</title>
+<meta name="description" content="24/7 emergency plumbing and heating in Bridgeport, CT. Leak repair, drain cleaning, fixture installation and maintenance. Call (203) 395-0622.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#14202b;--muted:#51606d;--bg:#f6f4ef;--card:#fff;--line:#e2ded4;--accent:#0b5c8a;--accent-d:#084a70;--warm:#b4541c}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);padding-bottom:64px}
-a{color:inherit}img{max-width:100%;display:block}
-.banner{background:#14202b;color:#fff;font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.01em}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-header.top{background:var(--card);border-bottom:1px solid var(--line)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
-.brand{font-weight:700;font-size:18px;letter-spacing:-.01em}
-.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:13px 22px;border-radius:10px;border:0;font-size:16px;cursor:pointer}
-.btn:hover{background:var(--accent-d)}.btn.alt{background:transparent;color:var(--accent);box-shadow:inset 0 0 0 2px var(--accent)}
-.btn.alt:hover{background:rgba(11,92,138,.08)}
-.hero{padding:28px 0 36px}
-.hero .wrap{display:grid;gap:24px}
-.eyebrow{color:var(--warm);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px}
-h1{font-size:clamp(34px,8vw,56px);line-height:1.05;margin:0 0 12px;letter-spacing:-.02em}
-.lead{font-size:18px;color:var(--muted);margin:0 0 18px}
-.badges{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px;padding:0;list-style:none}
-.badges li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:14px;font-weight:600}
-.cta{display:flex;flex-wrap:wrap;gap:10px}
-.hero img{border-radius:16px;width:100%;aspect-ratio:4/5;object-fit:cover}
-section{padding:36px 0}section.alt{background:var(--card);border-block:1px solid var(--line)}
-h2{font-size:28px;line-height:1.15;margin:0 0 18px;letter-spacing:-.01em}
-.cards{display:grid;gap:14px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
-section.alt .card{background:var(--bg)}
-.card h3{margin:0 0 6px;font-size:19px}.card p{margin:0;color:var(--muted)}
-.two{display:grid;gap:24px}
-.photo{border-radius:16px;width:100%;aspect-ratio:1/1;object-fit:cover}
-.why{display:grid;gap:8px;margin:16px 0 0;padding:0;list-style:none}
-.why li{padding-left:28px;position:relative;font-weight:600}
-.why li::before{content:"";position:absolute;left:0;top:.35em;width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:inset 0 0 0 4px #fff,0 0 0 2px var(--accent)}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;padding:0;list-style:none}
-.chips li{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;font-weight:600}
-.muted{color:var(--muted)}
-dl.hours{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 18px}dl.hours dt{font-weight:600}dl.hours dd{margin:0}
-.phone{font-size:30px;font-weight:800;letter-spacing:-.01em;text-decoration:none;color:var(--accent)}
-form{display:grid;gap:10px;margin-top:14px}
-fieldset{border:0;padding:0;margin:0;display:grid;gap:10px}
-label{font-size:14px;font-weight:600;display:grid;gap:4px}
-input,select{font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
-.demo{font-size:13px;color:var(--muted);margin:0}
-footer{padding:28px 0 40px;font-size:14px;color:var(--muted)}footer p{margin:0 0 8px}
-.callbar{position:fixed;left:0;right:0;bottom:0;background:var(--accent);color:#fff;text-align:center;padding:14px;font-weight:700;text-decoration:none;font-size:17px}
-@media(min-width:760px){
- body{padding-bottom:0}.callbar{display:none}
- .hero{padding:48px 0 56px}.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center;gap:40px}
- .cards{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr 1fr;align-items:center;gap:40px}
- section{padding:56px 0}}
+:root{
+  --ink:#0c1b20;
+  --deep:#11303a;
+  --tide:#1d4d58;
+  --copper:#c8743c;
+  --copper-hi:#e39a62;
+  --paper:#eef0ee;
+  --mute:#9fb3b7;
+  --line:rgba(238,240,238,.12);
+  --display:"Bricolage Grotesque",Georgia,serif;
+  --body:"Inter",system-ui,-apple-system,sans-serif;
+  --wrap:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--paper);font-family:var(--body);font-size:17px;line-height:1.6;padding-bottom:84px}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--copper-hi);outline-offset:3px;border-radius:4px}
 
-.ph{background:#e9e5da;border:2px dashed #b9b3a3;border-radius:12px;min-height:220px;display:flex;align-items:center;justify-content:center;
-color:#6b6558;font-size:15px;text-align:center;padding:16px}
-.hero-img,.photo{border-radius:12px;width:100%}
-.lead{font-size:19px;line-height:1.45;margin:6px 0 10px}
-.proof{margin:0 0 18px;font-weight:700}.proof a{color:inherit;text-decoration:underline;text-underline-offset:3px}
-.creds{list-style:none;padding:0;margin:8px 0;font-size:13px;line-height:1.6;opacity:.85}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.02;letter-spacing:-.02em}
+h2{font-size:clamp(2rem,6vw,3.25rem)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--copper-hi)}
+.eyebrow::before{content:"";width:24px;height:2px;background:var(--copper)}
+section{padding:72px 0}
+.section-head{display:flex;flex-direction:column;gap:14px;margin-bottom:40px;max-width:640px}
+.lede{color:var(--mute);font-size:1.05rem}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font-weight:600;font-size:1.05rem;text-decoration:none;border:0;cursor:pointer;font-family:var(--body);transition:background .2s,transform .2s}
+.btn-copper{background:var(--copper);color:#1a0e06}
+.btn-copper:hover{background:var(--copper-hi)}
+.btn-ghost{background:transparent;color:var(--paper);box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1.5px var(--paper)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Header */
+.header{position:sticky;top:0;z-index:40;background:rgba(12,27,32,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.mark{width:34px;height:34px;flex:none;border-radius:50%;background:var(--copper);display:grid;place-items:center}
+.mark svg{width:18px;height:18px}
+.brand-name{font-family:var(--display);font-weight:800;font-size:1.05rem;line-height:1;white-space:nowrap}
+.brand-name small{display:block;font-family:var(--body);font-weight:500;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-top:4px}
+.header-phone{display:flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:.95rem;white-space:nowrap;color:var(--copper-hi)}
+.header-phone svg{width:18px;height:18px}
+.header-phone .lbl{display:none;color:var(--mute);font-weight:500}
+.nav{display:none;gap:28px;font-size:.92rem}
+.nav a{text-decoration:none;color:var(--mute)}
+.nav a:hover{color:var(--paper)}
+
+/* Hero */
+.hero{padding:44px 0 64px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:auto -20% -40% -20%;height:70%;background:radial-gradient(60% 60% at 50% 100%,rgba(29,77,88,.55),transparent 70%);pointer-events:none}
+.hero .wrap{position:relative;display:flex;flex-direction:column;gap:36px}
+.status{display:inline-flex;align-items:center;gap:10px;font-size:.85rem;font-weight:500;color:var(--mute)}
+.dot{width:8px;height:8px;border-radius:50%;background:#5fd38d;box-shadow:0 0 0 4px rgba(95,211,141,.18)}
+.hero h1{font-size:clamp(2.75rem,12vw,5.75rem);margin:18px 0 18px}
+.hero p.lede{max-width:520px;font-size:1.12rem}
+.hero-actions{display:flex;flex-direction:column;gap:12px;margin-top:28px}
+.badge{display:inline-flex;align-items:center;gap:14px;margin-top:24px;padding:12px 18px 12px 14px;border-radius:16px;background:rgba(238,240,238,.05);border:1px solid var(--line);text-decoration:none;transition:border-color .2s}
+.badge:hover{border-color:var(--copper)}
+.badge-score{font-family:var(--display);font-weight:800;font-size:1.9rem;line-height:1}
+.stars{display:flex;gap:2px;color:var(--copper-hi)}
+.stars svg{width:15px;height:15px}
+.badge-meta{font-size:.82rem;color:var(--mute);line-height:1.3}
+.badge-meta strong{color:var(--paper);font-weight:600}
+
+/* Placeholder */
+.ph{position:relative;border-radius:20px;border:1.5px dashed rgba(200,116,60,.55);background:repeating-linear-gradient(135deg,rgba(29,77,88,.35) 0 14px,rgba(17,48,58,.35) 14px 28px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;color:var(--mute);padding:20px}
+.ph strong{font-family:var(--display);font-size:1.15rem;color:var(--paper)}
+.ph span{font-size:.82rem}
+.hero .ph{aspect-ratio:4/3}
+
+/* Services */
+.services{background:var(--paper);color:var(--ink)}
+.services .eyebrow{color:#9b5223}
+.services .lede{color:#4a5d61}
+.svc-grid{display:grid;grid-template-columns:1fr;border-top:1px solid rgba(12,27,32,.14)}
+.svc{display:flex;gap:18px;align-items:flex-start;padding:24px 4px;border-bottom:1px solid rgba(12,27,32,.14)}
+.svc h3{font-size:1.4rem;letter-spacing:-.01em}
+.svc p{color:#4a5d61;font-size:.97rem;margin-top:4px}
+
+/* Steps */
+.steps{display:grid;gap:16px}
+.step{padding:28px;border-radius:20px;background:var(--deep);border:1px solid var(--line)}
+.step-n{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--copper);color:#1a0e06;font-family:var(--display);font-weight:800;font-size:1.2rem;margin-bottom:22px}
+.step h3{font-size:1.45rem;margin-bottom:8px}
+.step p{color:var(--mute)}
+
+/* About */
+.about{background:var(--deep)}
+.about .wrap{display:flex;flex-direction:column;gap:36px}
+.about-lines{list-style:none;display:flex;flex-direction:column}
+.about-lines li{font-family:var(--display);font-weight:600;font-size:clamp(1.5rem,5vw,2.25rem);line-height:1.15;padding:20px 0;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+.about-lines li:first-child{border-top:1px solid var(--line)}
+.about .ph{aspect-ratio:1/1}
+
+/* Area */
+.towns{display:flex;flex-wrap:wrap;gap:10px;list-style:none}
+.towns li{padding:12px 20px;border-radius:999px;border:1px solid var(--line);font-weight:500}
+.towns li.home{background:var(--copper);color:#1a0e06;border-color:var(--copper)}
+.area-note{margin-top:24px;color:var(--mute)}
+
+/* Emergency */
+.emergency{background:var(--copper);color:#1a0e06;padding:64px 0}
+.emergency .wrap{display:flex;flex-direction:column;gap:20px}
+.emergency .eyebrow{color:#1a0e06}
+.emergency .eyebrow::before{background:#1a0e06}
+.emergency h2{font-size:clamp(2rem,7vw,3.5rem)}
+.big-phone{white-space:nowrap;font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,10.5vw,4.5rem);line-height:1;text-decoration:none;letter-spacing:-.02em;display:inline-block;border-bottom:4px solid #1a0e06;align-self:flex-start;padding-bottom:6px}
+.big-phone:hover{opacity:.8}
+
+/* Form */
+.form-wrap{display:flex;flex-direction:column;gap:36px}
+form{display:flex;flex-direction:column;gap:18px;padding:28px;border-radius:24px;background:var(--deep);border:1px solid var(--line)}
+label{display:block;font-weight:600;font-size:.92rem;margin-bottom:8px}
+input,textarea{width:100%;font:inherit;color:var(--paper);background:var(--ink);border:1.5px solid var(--line);border-radius:12px;padding:14px 16px;min-height:52px;transition:border-color .2s}
+textarea{min-height:130px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--copper)}
+input::placeholder,textarea::placeholder{color:#62777c}
+.form-note{font-size:.85rem;color:var(--mute)}
+.form-side p{color:var(--mute);margin-top:14px}
+.form-side a{color:var(--copper-hi);font-weight:600}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:44px 0 32px;font-size:.92rem;color:var(--mute)}
+footer .wrap{display:flex;flex-direction:column;gap:20px}
+footer a{color:var(--paper);text-decoration:none}
+footer .concept{padding-top:20px;border-top:1px solid var(--line);font-size:.82rem}
+
+/* Sticky call (mobile) */
+.sticky-call{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:flex;align-items:center;justify-content:center;gap:12px;min-height:60px;border-radius:999px;background:var(--copper);color:#1a0e06;font-weight:700;font-size:1.08rem;text-decoration:none;box-shadow:0 12px 32px rgba(0,0,0,.45)}
+.sticky-call svg{width:22px;height:22px}
+.sticky-call .pulse{width:8px;height:8px;border-radius:50%;background:#1a0e06;animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Larger screens */
+@media (min-width:480px){
+  .header-phone .lbl{display:inline}
+  .hero-actions{flex-direction:row;flex-wrap:wrap}
+}
+@media (min-width:720px){
+  section{padding:104px 0}
+  .svc-grid{grid-template-columns:1fr 1fr;column-gap:48px}
+  .steps{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:960px){
+  body{padding-bottom:0}
+  .sticky-call{display:none}
+  .nav{display:flex}
+  .header .wrap{height:76px}
+  .hero{padding:80px 0 112px}
+  .hero .wrap{flex-direction:row;align-items:center;gap:56px}
+  .hero-copy{flex:1.15}
+  .hero .ph{flex:1;aspect-ratio:4/5}
+  .about .wrap{flex-direction:row;align-items:center;gap:64px}
+  .about-copy{flex:1.2}
+  .about .ph{flex:1}
+  .emergency .wrap{flex-direction:row;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;column-gap:40px}
+  .form-wrap{flex-direction:row;gap:64px;align-items:flex-start}
+  .form-side{flex:1}
+  form{flex:1.2}
+  footer .wrap{flex-direction:row;flex-wrap:wrap;justify-content:space-between}
+  footer .concept{flex-basis:100%}
+}
 </style>
 </head>
 <body>
-<div class="banner">Concept by Mars Creative — not the official Leak Off Plumbing &amp; Heating site</div>
-<header class="top"><div class="wrap">
-<span class="brand">Leak Off Plumbing &amp; Heating</span>
-<a class="btn" href="tel:2033950622">(203) 395-0622</a>
-</div></header>
-<main>
-<section class="hero"><div class="wrap">
-<div>
-<h1>Plumbing in Bridgeport</h1>
-<p class="lead">24/7 emergency service to tackle issues any time, day or night.</p>
-<p class="proof"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ1aE2raFVVaoRNXaBFghFoqk">140 reviews · 4.9★ on Google</a></p>
-<div class="cta"><a class="btn" href="#contact">Request service</a><a class="btn alt" href="tel:2033950622">Call (203) 395-0622</a></div>
-</div>
-<img class="hero-img" src="install.png" alt="A neatly finished water heater installation">
-</div></section>
-<section class="alt" id="services"><div class="wrap"><h2>Services</h2><div class="cards"><div class="card"><h3>Leak Protection and Repair</h3></div>
-<div class="card"><h3>Drain Cleaning and Unclogging</h3></div>
-<div class="card"><h3>Fixture Installation</h3></div>
-<div class="card"><h3>Maintenance</h3></div></div></div></section>
-<section id="about"><div class="wrap two">
-<div><h2>About</h2><p>Solving plumbing and heating challenges with a customer-first approach.</p>
-<p>Years of experience combined with a passion for reliable service.</p></div>
-<img class="photo" src="tools.png" alt="Plumbing tools laid out on a drop cloth">
-</div></section>
-<section class="alt" id="area"><div class="wrap two"><div><h2>Service area</h2><ul class="chips"><li>Bridgeport</li></ul></div><img class="photo" src="van.png" alt="A plain work van in a driveway"></div></section>
-<section id="contact"><div class="wrap two">
-<div>
-<h2>Request service</h2>
-<p><a class="phone" href="tel:2033950622">(203) 395-0622</a></p>
 
-</div>
-<div>
-<form onsubmit="return false"><fieldset disabled>
-<label>Name<input type="text" autocomplete="off"></label>
-<label>Phone<input type="tel" autocomplete="off"></label>
-<button class="btn" type="button">Request service</button>
-</fieldset>
-<p class="demo">Concept only: this form does not send anything. To reach Leak Off Plumbing &amp; Heating, call (203) 395-0622.</p>
-</form>
-</div>
-</div></section>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5s-7 7.6-7 12.5a7 7 0 0 0 14 0c0-4.9-7-12.5-7-12.5z"/></symbol>
+</svg>
+
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Leak Off Plumbing &amp; Heating, home">
+      <span class="mark" aria-hidden="true"><svg style="color:#1a0e06"><use href="#i-drop"/></svg></span>
+      <span class="brand-name">Leak Off<small>Plumbing &amp; Heating</small></span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#area">Service area</a>
+      <a href="#request">Request service</a>
+    </nav>
+    <a class="header-phone" href="tel:+12033950622">
+      <svg aria-hidden="true"><use href="#i-phone"/></svg>
+      <span class="lbl">24/7</span>
+      (203) 395-0622
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="status"><span class="dot" aria-hidden="true"></span>Open now. 24/7 emergency service.</span>
+        <h1 id="hero-title">A leak can&apos;t wait until morning.</h1>
+        <p class="lede">Bridgeport plumbing and heating, day or night. One call gets a plumber on the way.</p>
+        <div class="hero-actions">
+          <a class="btn btn-copper" href="tel:+12033950622">
+            <svg aria-hidden="true"><use href="#i-phone"/></svg>
+            Call (203) 395-0622
+          </a>
+          <a class="btn btn-ghost" href="#request">Request service</a>
+        </div>
+        <a class="badge" href="https://www.google.com/maps/search/?api=1&amp;query=Leak+Off+Plumbing+%26+Heating+Bridgeport+CT" target="_blank" rel="noopener">
+          <span class="badge-score">4.9</span>
+          <span>
+            <span class="stars" aria-hidden="true">
+              <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+            </span>
+            <span class="badge-meta"><strong>140 Google reviews</strong><br>Read them on Google Maps</span>
+          </span>
+          <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </div>
+      <div class="ph" role="img" aria-label="Photo placeholder: your photo here">
+        <strong>Your photo here</strong>
+        <span>Hero, Diego or the van on a job</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Services</span>
+        <h2 id="services-title">What we fix.</h2>
+        <p class="lede">Plumbing and heating, day or night.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="svc"><div><h3>24/7 emergency service</h3><p>Any time, day or night.</p></div></div>
+        <div class="svc"><div><h3>Leak repair</h3><p>Leak protection and repair.</p></div></div>
+        <div class="svc"><div><h3>Drain cleaning</h3><p>Drain cleaning and unclogging.</p></div></div>
+        <div class="svc"><div><h3>Fixture installation</h3><p>Including kitchen fixtures.</p></div></div>
+        <div class="svc"><div><h3>Maintenance</h3><p>Plumbing and heating maintenance.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2 id="how-title">Two steps.</h2>
+      </div>
+      <ol class="steps" role="list" style="list-style:none">
+        <li class="step"><div class="step-n" aria-hidden="true">1</div><h3>Call or request service</h3><p>Call any time, or send the form below.</p></li>
+        <li class="step"><div class="step-n" aria-hidden="true">2</div><h3>A plumber comes out</h3><p>Any hour, any day.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="about-copy">
+        <div class="section-head" style="margin-bottom:28px">
+          <span class="eyebrow">About</span>
+          <h2 id="about-title" class="sr-only">About Leak Off Plumbing &amp; Heating</h2>
+        </div>
+        <ul class="about-lines">
+          <li>Run by Diego.</li>
+          <li>Based in Bridgeport, CT.</li>
+          <li>24/7 emergency service.</li>
+        </ul>
+      </div>
+      <div class="ph" role="img" aria-label="Photo placeholder: your photo here">
+        <strong>Your photo here</strong>
+        <span>Portrait of Diego</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="area" aria-labelledby="area-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Service area</span>
+        <h2 id="area-title">Local to Bridgeport.</h2>
+      </div>
+      <ul class="towns">
+        <li class="home">Bridgeport</li>
+      </ul>
+      <p class="area-note">Not sure if you&apos;re covered? Call and ask.</p>
+    </div>
+  </section>
+
+  <section class="emergency" aria-labelledby="em-title">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Emergency</span>
+        <h2 id="em-title" style="margin-top:14px">Water where it shouldn&apos;t be?</h2>
+      </div>
+      <a class="big-phone" href="tel:+12033950622">(203) 395-0622</a>
+    </div>
+  </section>
+
+  <section id="request" aria-labelledby="req-title">
+    <div class="wrap form-wrap">
+      <div class="form-side">
+        <span class="eyebrow">Request service</span>
+        <h2 id="req-title" style="margin-top:14px">Tell us what&apos;s wrong.</h2>
+        <p>Three fields. We call you back.</p>
+        <p>Emergency? Don&apos;t wait on a form. <a href="tel:+12033950622">Call (203) 395-0622</a>.</p>
+      </div>
+      <form id="req-form" novalidate>
+        <div>
+          <label for="f-name">Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+        </div>
+        <div>
+          <label for="f-phone">Phone</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(203) 555-0100">
+        </div>
+        <div>
+          <label for="f-issue">What&apos;s wrong</label>
+          <textarea id="f-issue" name="issue" required placeholder="Leak under the kitchen sink, water heater not working..."></textarea>
+        </div>
+        <button class="btn btn-copper" type="submit">Send request</button>
+        <p class="form-note" id="form-note" role="status" aria-live="polite">Concept form — requests are not sent. Call (203) 395-0622.</p>
+      </form>
+    </div>
+  </section>
+
 </main>
-<footer><div class="wrap">
-<p>Leak Off Plumbing &amp; Heating, Plumbing in Bridgeport, CT</p>
 
-<p>This page is a concept by <a href="https://marscreative.us">Mars Creative</a>. It is not the official Leak Off Plumbing &amp; Heating site and Leak Off Plumbing &amp; Heating has not approved it. Business details come from <a href="https://leakoffph.com/">leakoffph.com</a>.</p>
-<p class="demo">Photos on this concept are AI-made illustrations, not photos of the business.</p>
-</div></footer>
-<a class="callbar" href="tel:2033950622">Call (203) 395-0622</a>
+<footer>
+  <div class="wrap">
+    <div>
+      <strong style="color:var(--paper);font-family:var(--display);font-size:1.1rem">Leak Off Plumbing &amp; Heating</strong><br>
+      Bridgeport, CT. 24/7 emergency service.
+    </div>
+    <div>
+      <a href="tel:+12033950622">(203) 395-0622</a><br>
+      Bridgeport, CT
+    </div>
+    <p class="concept">Concept by Mars Creative — not the official site. Details from leakoffph.com.</p>
+  </div>
+</footer>
+
+<a class="sticky-call" href="tel:+12033950622" aria-label="Call Leak Off Plumbing and Heating at (203) 395-0622">
+  <span class="pulse" aria-hidden="true"></span>
+  <svg aria-hidden="true"><use href="#i-phone"/></svg>
+  Call now · (203) 395-0622
+</a>
+
+<script>
+document.getElementById('req-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var f = e.target, note = document.getElementById('form-note');
+  var name = f.name.value.trim(), phone = f.phone.value.trim(), issue = f.issue.value.trim();
+  if (!name || !phone || !issue) {
+    note.textContent = 'Please fill in all three fields.';
+    (!name ? f.name : !phone ? f.phone : f.issue).focus();
+    return;
+  }
+  note.textContent = 'Concept form — requests are not sent. Call (203) 395-0622.';
+});
+</script>
 </body>
 </html>
